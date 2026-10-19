@@ -211,8 +211,9 @@ function Skills() {
         Technical Skills
       </SectionHeading>
       <p className="section-intro">
-        Grouped by where I have applied them, rather than by a self-assigned
-        proficiency score.
+        A practical mix of development, quality assurance, and IT support
+        foundations, built through projects, internship experience, and
+        continued practice.
       </p>
       <div className="skills-list">
         {portfolio.skills.map(({ category, items }) => (
@@ -227,7 +228,8 @@ function Skills() {
 }
 
 function Experience() {
-  const { role, company, dates, responsibilities } = portfolio.experience;
+  const { role, company, dates, summary, responsibilities } =
+    portfolio.experience;
   return (
     <section
       className="content-section"
@@ -244,10 +246,7 @@ function Experience() {
           <p className="entry-dates">{dates}</p>
         </div>
         <div>
-          <p className="experience-context">
-            My internship focused on software testing and clear, actionable
-            documentation.
-          </p>
+          <p className="experience-context">{summary}</p>
           <ul className="plain-list">
             {responsibilities.map((item) => (
               <li key={item}>{item}</li>
