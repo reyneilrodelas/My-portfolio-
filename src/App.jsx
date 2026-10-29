@@ -8,6 +8,7 @@ const navigation = [
   ["Experience", "experience"],
   ["Contact", "contact"],
 ];
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
 function Header() {
   return (
@@ -60,6 +61,9 @@ function Introduction() {
         <div className="intro-links">
           <a className="button button-primary" href="#projects">
             Explore Projects
+          </a>
+          <a className="button button-secondary" href={resumeUrl} target="_blank" rel="noopener noreferrer">
+            View Resume
           </a>
           <a className="text-link" href="#contact">
             Get in touch <span aria-hidden="true">→</span>
@@ -257,6 +261,25 @@ function Experience() {
     </section>
   );
 }
+function Certifications() {
+  return (
+    <section
+      className="content-section"
+      id="certifications"
+      aria-labelledby="certifications-title"
+    >
+      <SectionHeading eyebrow="Certifications" id="certifications-title">
+        Certifications & Training
+      </SectionHeading>
+      <ul className="plain-list certifications-list">
+        {portfolio.certifications.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 function Contact() {
   const { github, email, linkedin } = portfolio.contact;
   const optionalLinks = [
@@ -283,11 +306,17 @@ function Contact() {
       </SectionHeading>
       <div className="contact-layout">
         <p className="body-copy">
-          I’m open to entry-level roles such as Software Engineer, Junior
-          Tester/QA, IT Assistant, and Network Associate, as well as other
+          I’m open to entry-level roles such as Associate Network Engineer,
+          Junior Network Engineer, IT Support, QA Analyst, and other
           opportunities in IT.
         </p>
         <div className="contact-list">
+          <div className="contact-item">
+            <h3>Resume</h3>
+            <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+              Download / view PDF <span aria-hidden="true">↗</span>
+            </a>
+          </div>
           <div className="contact-item">
             <h3>GitHub</h3>
             <a href={github} target="_blank" rel="noopener noreferrer">
@@ -339,6 +368,7 @@ export default function App() {
         <Projects />
         <Skills />
         <Experience />
+        <Certifications />
         <Contact />
       </main>
       <Footer />

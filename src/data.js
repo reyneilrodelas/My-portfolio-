@@ -1,48 +1,80 @@
 export const portfolio = {
   name: "Reyneil Rodelas",
-  title: "Entry-Level IT Professional",
+  title: "Information Technology Graduate | Associate Network Engineer",
   tagline:
-    "Open to entry-level roles such as Software Engineer, Junior Tester/QA, IT Assistant, and Network Associate, as well as other opportunities in IT.",
+    "Open to entry-level roles such as Associate Network Engineer, Junior Network Engineer, IT Support, QA Analyst, and other opportunities in IT.",
   introduction:
-    "I’m an Information Technology graduate with experience in software development and quality assurance, along with a foundation in IT troubleshooting and technical documentation. I’m eager to contribute, keep learning, and grow in a role where I can solve technical problems and support users and teams.",
+    "I’m an Information Technology graduate with foundational knowledge of computer networking, IP addressing, subnetting, network security, operating systems, and cloud computing. I bring experience in software testing, issue identification, technical documentation, and systematic troubleshooting through my QA internship and academic projects, and I’m eager to grow in LAN/WAN operations, network administration, and cloud infrastructure.",
   about:
-    "My Information Technology studies and projects have given me experience working with mobile and web application technologies. During my QA internship at Tidewrk, I performed functional and regression testing, documented defects, maintained test cases and technical documentation, and practiced Playwright. I’m open to entry-level roles such as Software Engineer, Junior Tester/QA, IT Assistant, and Network Associate. I’m motivated to keep learning and contribute to a team wherever I can help solve technical problems.",
+    "My IT studies and projects have given me a practical foundation in networking, troubleshooting, software testing, and technical documentation. During my QA internship at Tidewrk, I executed functional and regression testing, tracked issues, maintained test cases and data, and documented findings with clear attention to detail. I’m especially interested in building practical skills in network operations, wireless networking, device configuration, and cloud infrastructure as an Associate Network Engineer.",
   skills: [
+    {
+      category: "Networking fundamentals",
+      items: [
+        "TCP/IP fundamentals",
+        "IP addressing",
+        "Subnetting",
+        "LAN/WAN concepts",
+        "Basic network topologies",
+        "Connectivity troubleshooting",
+      ],
+    },
+    {
+      category: "Networking tools and technologies",
+      items: [
+        "Cisco Packet Tracer",
+        "Basic router and switch configuration",
+        "Network simulation",
+        "VirtualBox",
+        "VMware",
+      ],
+    },
+    {
+      category: "Network security and cloud",
+      items: [
+        "Network security principles",
+        "Access control concepts",
+        "AWS basics",
+        "Introductory cloud labs",
+        "Virtualization fundamentals",
+      ],
+    },
+    {
+      category: "IT support and documentation",
+      items: [
+        "Windows OS fundamentals",
+        "Software installation and configuration",
+        "Hardware troubleshooting",
+        "Technical issue documentation",
+        "Microsoft Word",
+        "Excel",
+        "PowerPoint",
+      ],
+    },
     {
       category: "Quality assurance",
       items: [
         "Functional testing",
         "Regression testing",
+        "Defect reporting",
         "Test case maintenance",
-        "Defect reporting and documentation",
+        "Issue validation",
       ],
     },
     {
-      category: "Software development",
+      category: "Tools and applications",
+      items: ["Git", "GitHub", "Visual Studio Code", "Jira", "MySQL"],
+    },
+    {
+      category: "Professional skills",
       items: [
-        "React",
-        "JavaScript",
-        "TypeScript",
-        "React Native",
-        "Expo",
-        "CSS",
-        "HTML",
-        "PHP",
-        "SQL",
-        "Node.js",
+        "Attention to detail",
+        "Analytical problem-solving",
+        "Written communication",
+        "Team collaboration",
+        "Adaptability",
+        "Continuous learning",
       ],
-    },
-    {
-      category: "Test automation",
-      items: ["Playwright"],
-    },
-    {
-      category: "Tools and data services",
-      items: ["Git", "GitHub", "Supabase"],
-    },
-    {
-      category: "IT support foundations",
-      items: ["Basic IT troubleshooting", "Technical documentation"],
     },
   ],
   experience: {
@@ -50,29 +82,31 @@ export const portfolio = {
     company: "Tidewrk",
     dates: "February 2026 – May 2026",
     summary:
-      "Supported software quality through hands-on functional and regression testing, clear defect reporting, and organized test documentation.",
+      "Supported software quality through functional and regression testing, issue validation, and organized technical documentation for application reliability.",
     responsibilities: [
-      "Executed functional and regression checks to evaluate application behavior.",
-      "Identified, documented, and reported defects to support investigation and resolution.",
-      "Maintained test cases, test data, and technical documentation.",
-      "Built familiarity with UI test automation by practicing with Playwright.",
+      "Executed functional and regression checks to verify application behavior and reliability.",
+      "Assisted with issue tracking and validation of fixes to confirm reported problems were addressed.",
+      "Used a systematic approach to investigate unexpected results, compare actual and expected behavior, and document findings.",
+      "Created and maintained test cases, test data, and technical documentation to support testing activities.",
+      "Communicated testing results and documented issues clearly with team members to support application quality.",
     ],
   },
   projects: [
     {
       id: "our-system",
-      name: "ScanWizard: Product Locator Application with Customizable Distance Tracker.",
+      name: "ScanWizard: Product Locator Application with Customizable Distance Tracker",
       kind: "Full-Stack Development · Academic Team Project",
       summary:
-        "A mobile application that combines barcode scanning, product search, nearby-store discovery, and a customizable search radius using React Native, Expo, TypeScript, and Supabase.",
+        "A mobile application that enables users to scan product barcodes and QR codes, find related products, and locate nearby stores carrying them using a customizable search radius.",
       technologies: [
         "React Native",
         "Expo",
         "TypeScript",
         "Supabase",
+        "React Navigation",
+        "React Native Maps",
         "Expo Camera",
         "Expo Location",
-        "React Native Maps",
       ],
       sections: [
         {
@@ -83,7 +117,7 @@ export const portfolio = {
         {
           heading: "My contribution",
           content:
-            "I developed ScanWizard as a full-stack mobile application with the assistance of AI tools throughout the development process. I worked on the application's frontend, Supabase backend integration, barcode scanning, product search, location-based store discovery, and customizable search radius. I also worked on the application's code structure, profile interface, and store-approval workflows.",
+            "I developed ScanWizard as a full-stack mobile application with the assistance of AI tools throughout the development process. I worked on the application's frontend, Supabase backend integration, barcode scanning, product search, location-based store discovery, and customizable search radius. I also contributed to the app structure, profile interface, and store approval workflows.",
           links: [
             {
               label: "View Source Code on GitHub",
@@ -94,22 +128,22 @@ export const portfolio = {
         {
           heading: "Implementation",
           bullets: [
-            "Implemented in TypeScript with Expo and separated into shared, store-owner, and administrator screens.",
-            "Connects barcode scanning and text search to product data stored in Supabase.",
-            "Provides nearby-store discovery with maps, location services, and a selectable search radius.",
-            "Organizes UI components, app context, configuration, and Supabase data access into separate modules.",
-            "Includes distinct authentication and store-management flows for store owners and administrators.",
+            "Built in TypeScript with Expo using separate shared, store-owner, and administrator screens.",
+            "Integrated barcode scanning and text search with product data stored in Supabase.",
+            "Implemented nearby-store discovery using map and location services with a customizable distance tracker.",
+            "Developed product and store management functions for organizing product availability and store information.",
+            "Participated in system testing, troubleshooting, database management, and interface development.",
           ],
         },
         {
-          heading: "Technical notes",
+          heading: "Recognition",
           content:
-            "Barcode scanning and text search feed into a shared product-result flow, while Supabase access is organized in a dedicated data module. The project combines mobile UI, backend data access, and location-aware discovery.",
+            "Awarded 2nd Best Capstone Award for ScanWizard.",
         },
         {
           heading: "Validation and limitations",
           content:
-            "The repository includes Expo scripts for Android, iOS, and web, but no test script or published test results. The case study therefore describes the implementation without claiming test coverage or device-validation results.",
+            "The repository includes Expo scripts for Android, iOS, and web, but no test script or published test results. The case study therefore describes implementation and contributions without claiming complete formal validation beyond the project’s development workflow.",
         },
       ],
       links: [
@@ -128,16 +162,46 @@ export const portfolio = {
       featured: true,
     },
     {
+      id: "safety-security-system",
+      name: "Web-Based Safety and Security Services Unit Management System",
+      kind: "Web Development · Academic Project",
+      summary:
+        "A web-based system for managing personnel, incident reports, schedules, and records for a safety and security services unit.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap", "XAMPP"],
+      sections: [
+        {
+          heading: "Problem",
+          content:
+            "Safety and security information can become scattered across manual records and multiple sources. A centralized system helps organize and access important operational data more efficiently.",
+        },
+        {
+          heading: "My contribution",
+          content:
+            "I served as a co-developer for the front-end and back-end, helping implement modules for managing personnel, incident reports, schedules, and records.",
+        },
+        {
+          heading: "Implementation",
+          bullets: [
+            "Developed a centralized system for managing personnel, incident reports, schedules, and records.",
+            "Created user-friendly interfaces to improve information organization and accessibility.",
+            "Applied web development, database management, and system design principles throughout the project.",
+          ],
+        },
+      ],
+      links: [],
+    },
+    {
       id: "qa-testing",
       name: "Software Testing & Playwright",
       kind: "Quality assurance · Internship and practice",
       summary:
-        "Hands-on QA internship experience in functional and regression testing, supported by ongoing Playwright practice. Internship work and independent learning are described separately.",
+        "Hands-on QA internship experience in functional and regression testing, supported by ongoing Playwright practice and issue documentation.",
       technologies: [
         "Functional testing",
         "Regression testing",
         "Playwright",
         "Defect documentation",
+        "Jira",
       ],
       sections: [
         {
@@ -148,7 +212,7 @@ export const portfolio = {
         {
           heading: "QA internship",
           content:
-            "At Tidewrk, I tested application functionality and regression behavior, reported defects, and maintained test cases, test data, and technical documentation.",
+            "At Tidewrk, I tested application functionality and regression behavior, validated fixes, and maintained test cases, test data, and technical documentation.",
         },
         {
           heading: "Playwright practice",
@@ -197,6 +261,11 @@ export const portfolio = {
     dates: "August 2022 – June 2026",
     distinction: "Academic Distinction",
   },
+  certifications: [
+    "Hardware and Upgrade Support — Cisco Networking Academy",
+    "IT Customer Support Basic — Cisco Networking Academy",
+    "Networking Basics — Cisco Networking Academy",
+  ],
   contact: {
     github: "https://github.com/reyneilrodelas",
     email: "reyneilrodelas29@gmail.com",

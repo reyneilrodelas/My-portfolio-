@@ -179,6 +179,16 @@ summary:focus-visible {
   color: #fff;
 }
 
+.button-secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.button-secondary:hover {
+  background: var(--beige);
+  color: var(--accent);
+}
+
 .text-link {
   font-size: 14px;
   font-weight: 700;
